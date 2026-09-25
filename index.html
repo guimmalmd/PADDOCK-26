@@ -1,0 +1,95 @@
+<!DOCTYPE html> <!-- Informa o navegador que estamos utilizando o HTML 5 -->
+
+<html lang="pt-BR"> <!-- Define a língua utilizada -->
+
+<head> <!-- Guarda informações sobre a página | Maior parte não aparece na parte visual -->
+
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres | Acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Diz ao navegador: considere a largura real da tela do dispositivo como a largura da página. -->
+    <title>PADDOCK 26</title> <!-- Título que fica na aba do navegador -->
+
+</head>
+
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>PADDOCK 26</h1>
+
+        <nav> <!-- Área de navegação -->
+            <ul> <!-- Lista não ordenada = Bolinhas | Também existem listas ordenadas (1, 2, 3...) com 'ol' -->
+                <li><a href="#">Início</a></li> <!-- a = links | # = Valor do atributo href -->
+                <li><a href="#">Pilotos</a></li> <!-- li = item da lista -->
+                <li><a href="#">Equipes</a></li>
+                <li><a href="#">Calendário</a></li>
+                <li><a href="#">Classificação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- Conteúdo principal da página -->
+        <section> <!-- Seção temática da página -->
+            <img src="./assets/images/f1-pilotos.png" alt="Pilotos em escada">
+
+            <div>
+                <h2>Temporada 2026</h2>
+
+                <p>
+                    Acompanhe pilotos, equipes, corridas e a classificação
+                    da temporada 2026.
+                </p>
+
+                <a href="#">Explorar temporada</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>O seu lugar no paddock</h2>
+
+            <p>
+                O <strong>Paddock 26</strong> reúne as principais informações da temporada
+                <em>em um só lugar</em>.
+            </p>
+        </section>
+
+        <section>
+            <h2>Explore o Paddock</h2>
+
+            <article> <!-- Conteúdo independente dentro de section -->
+                <h3>Pilotos</h3>
+                <p>Conheça o grid da temporada 2026.</p>
+                <a href="#">Ver pilotos</a>
+            </article>
+
+            <article>
+                <h3>Equipes</h3>
+                <p>Conheça as equipes que disputam o campeonato.</p>
+                <a href="#">Ver equipes</a>
+            </article>
+
+            <article>
+                <h3>Calendário</h3>
+                <p>Acompanhe todas as etapas da temporada.</p>
+                <a href="#">Ver calendário</a>
+            </article>
+        </section>
+
+        <section>
+            <h2>Próxima corrida</h2>
+
+            <article>
+                <h3>Grande Prêmio de Singapura</h3>
+                <p>Marina Bay Street Circuit</p>
+                <p><strong>Singapura</strong></p>
+                <a href="#">Ver detalhes da corrida</a>
+            </article>
+            
+        </section>
+
+    </main>
+
+    <footer> <!-- Rodapé -->
+        <p>&copy; 2026 Paddock 26</p> <!-- &copy é uma HTML Entity | O navegador interpreta como © -->
+    </footer>
+</body>
+
+</html>
