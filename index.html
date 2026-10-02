@@ -7,16 +7,18 @@
     <meta charset="UTF-8"> <!-- Define a codificação de caracteres | Acentuação -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <!-- Diz ao navegador: considere a largura real da tela do dispositivo como a largura da página. -->
+    <link rel="stylesheet" href="./css/style.css"> <!-- Conecta o CSS com o HTML -->
+    
     <title>PADDOCK 26</title> <!-- Título que fica na aba do navegador -->
 
 </head>
 
 <body>
-    <header> <!-- Cabeçalho -->
-        <h1>PADDOCK 26</h1>
+    <header class="header"> <!-- Cabeçalho -->
+        <h1 class="logo">PADDOCK 26</h1>
 
-        <nav> <!-- Área de navegação -->
-            <ul> <!-- Lista não ordenada = Bolinhas | Também existem listas ordenadas (1, 2, 3...) com 'ol' -->
+        <nav class="header-nav"> <!-- Área de navegação -->
+            <ul class="header-menu"> <!-- Lista não ordenada = Bolinhas | Também existem listas ordenadas (1, 2, 3...) com 'ol' -->
                 <li><a href="#">Início</a></li> <!-- a = links | # = Valor do atributo href -->
                 <li><a href="#">Pilotos</a></li> <!-- li = item da lista -->
                 <li><a href="#">Equipes</a></li>
@@ -26,54 +28,83 @@
         </nav>
     </header>
 
+
+<!-- HERO -->
     <main> <!-- Conteúdo principal da página -->
-        <section> <!-- Seção temática da página -->
-            <img src="./assets/images/f1-pilotos.png" alt="Pilotos em escada">
 
-            <div>
-                <h2>Temporada 2026</h2>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="hero-season">TEMPORADA 2026</p>
 
-                <p>
+                <h2 class="hero-title">
+                    A FÓRMULA 1<br>
+                    EM UM SÓ LUGAR
+                </h2>
+
+                <p class="hero-description">
                     Acompanhe pilotos, equipes, corridas e a classificação
                     da temporada 2026.
                 </p>
 
-                <a href="#">Explorar temporada</a>
+                <a class="hero-button" href="#">
+                    Explorar temporada
+                </a>
             </div>
+
+            <img
+                class="hero-image"
+                src="./assets/images/f1-pilotos.png"
+                alt="Pilotos da Fórmula 1"
+            >
         </section>
 
-        <section>
-            <h2>O seu lugar no paddock</h2>
+        <!-- ABOUT -->
+        <section class="about">
+            <p class="section-label">PADDOCK 26</p>
 
-            <p>
+            <h2 class="about-title">
+                O seu lugar no paddock
+            </h2>
+
+            <p class="about-description">
                 O <strong>Paddock 26</strong> reúne as principais informações da temporada
                 <em>em um só lugar</em>.
             </p>
         </section>
 
-        <section>
-            <h2>Explore o Paddock</h2>
+        <!-- EXPLORE -->
+        <section class="explore">
 
-            <article> <!-- Conteúdo independente dentro de section -->
-                <h3>Pilotos</h3>
-                <p>Conheça o grid da temporada 2026.</p>
-                <a href="#">Ver pilotos</a>
-            </article>
+            <div class="explore-header">
+                <p class="section-label">EXPLORE</p>
+                <h2 class="explore-title">Explore o Paddock</h2>
+            </div>
 
-            <article>
-                <h3>Equipes</h3>
-                <p>Conheça as equipes que disputam o campeonato.</p>
-                <a href="#">Ver equipes</a>
-            </article>
+            <div class="explore-grid">
 
-            <article>
-                <h3>Calendário</h3>
-                <p>Acompanhe todas as etapas da temporada.</p>
-                <a href="#">Ver calendário</a>
-            </article>
+                <article class="explore-card">
+                    <h3>Pilotos</h3>
+                    <p>Conheça o grid da temporada 2026.</p>
+                    <a href="#">Ver pilotos</a>
+                </article>
+
+                <article class="explore-card">
+                    <h3>Equipes</h3>
+                    <p>Conheça as equipes que disputam o campeonato.</p>
+                    <a href="#">Ver equipes</a>
+                </article>
+
+                <article class="explore-card">
+                    <h3>Calendário</h3>
+                    <p>Acompanhe todas as etapas da temporada.</p>
+                    <a href="#">Ver calendário</a>
+                </article>
+
+            </div>
+
         </section>
 
-        <section>
+        <section class="next-race"> <!-- Criação da classe para facilitar a estilização no CSS -->
             <h2>Próxima corrida</h2>
 
             <article>

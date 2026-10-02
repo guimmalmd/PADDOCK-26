@@ -1,0 +1,224 @@
+* { /* Seletor universal | Página inteira */
+    margin: 0;
+    padding: 0; /* Se fica com pouco, ele vai colando nas laterais */
+    box-sizing: border-box;
+}
+
+/* 
+margin - espaço fora do elemento.
+padding - espaço dentro do elemento.
+Isso faz parte do Box Model do CSS. 
+*/
+
+body {
+    background-color: #0a0a0a;
+    color: #ffff;
+}
+
+.header {
+    padding: 20px 40px; /* 20px - cima e baixo | 40px - esquerda e direita */
+    border-bottom: 1px solid #222222; /* Cria uma borda inferior */
+
+    display: flex; /* Flex box para organizar os filhos */
+    justify-content: space-between;
+    align-items: center;
+}
+/* 1px - espessura | solid - tipo da linha | #222222 - cor */
+
+.header-menu {
+    list-style: none; /* As bolinhas do menu desaparecem. */
+    display: flex;
+    gap: 32px;
+}
+
+.header-menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-menu a:hover { /* Hover - pseudoclasse */
+    color: #e10600; /* Quando passa o mouse muda de cor */
+}
+
+/* HERO */
+.hero {
+    min-height: 650px;
+    padding: 80px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-season {
+    margin-bottom: 16px;
+
+    color: #e10600;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+
+    font-size: 64px;
+    line-height: 1;
+}
+
+.hero-description {
+    max-width: 550px;
+    margin-bottom: 32px;
+
+    color: #a3a3a3;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 24px;
+
+    background-color: #e10600;
+    color: #ffffff;
+
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.hero-button:hover {
+    background-color: #b80500;
+}
+
+.hero-image {
+    width: 48%;
+    max-width: 650px;
+    object-fit: contain;
+}
+
+/* ABOUT */
+.about {
+    padding: 100px 60px;
+
+    background-color: #111111;
+
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 16px;
+
+    color: #e10600;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-title {
+    margin-bottom: 24px;
+
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.about-description {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #a3a3a3;
+
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-description strong {
+    color: #ffffff;
+}
+
+/* EXPLORE */
+.explore {
+    padding: 100px 60px;
+}
+
+.explore-title {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+.explore-grid {
+    display: grid; /* CSS Grid */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.explore-card {
+    padding: 32px;
+
+    background-color: #151515;
+
+    border: 1px solid #242424;
+    border-radius: 16px;
+
+    transition: 0.3s; /* Duração da transição das propriedades alteradas */
+}
+
+.explore-card:hover {
+    transform: translateY(-6px); /* Está dizendo: mova o elemento 6px no eixo vertical. */
+    border-color: #ee0909;
+}
+
+.explore-card h3 {
+    margin-bottom: 16px;
+
+    font-size: 24px;
+}
+
+.explore-card p {
+    margin-bottom: 24px;
+
+    color: #a3a3a3;
+
+    line-height: 1.6;
+}
+
+.explore-card a {
+    display: inline-block;
+
+    color: #f6f3f3;
+
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 16px;
+    background-color: #e10600;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.explore-card a:hover {
+    background-color: #b80500;
+}
+
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e10600;
+}
+
+.next-race {
+    background-color: #151515;
+}
+
